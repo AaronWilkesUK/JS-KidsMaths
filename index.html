@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Kids Maths Exercises</title>
+</head>
+<body>
+    <audio id="answerSound"></audio>
+    <header>
+        <div class="header-container">
+            <h1>Maths For Kids</h1>
+            <ul>
+                <li class="selected" id="add">Add</li>
+                <li id="subtract">Subtract</li>
+                <li id="multiply">Multiply</li>
+                <li id="divide">Divide</li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <div class="question">
+            <h1 class="colour-red" id="number-one">1</h1>
+            <h1 class="colour-blue" id="operator">+</h1>
+            <h1 class="colour-yellow" id="number-two">1</h1>
+            <h1 class="colour-red">=</h1>
+            <h1 class="colour-gray">?</h1>
+        </div>
+        <div class="answers">
+            <h1 class="bg-red" id="answer-one">1</h1>
+            <h1 class="bg-blue" id="answer-two">2</h1>
+            <h1 class="bg-yellow" id="answer-three">3</h1>
+        </div>
+        <div class="scores">
+            <div><span>Your Score:&nbsp;</span><span id="score">0</span></div>
+            <div><span>Total:&nbsp;</span><span id="total">0</span></div>
+            <button id="reset">Reset Scores</button>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

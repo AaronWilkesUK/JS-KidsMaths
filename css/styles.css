@@ -1,0 +1,185 @@
+:root {
+    --colour-red: #fe4a49;
+    --colour-blue: #2ab7ca;
+    --colour-yellow: #fed766;
+    --colour-gray: gray;
+    --colour-light-gray: #e6e6ea;
+    --colour-white: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Luckiest Guy', cursive;
+    background-color: var(--colour-light-gray);
+    min-width: 570px;
+}
+
+.colour-red {
+    color: var(--colour-red);
+}
+
+.colour-blue {
+    color: var(--colour-blue);
+}
+
+.colour-yellow {
+    color: var(--colour-yellow);
+}
+
+.colour-gray {
+    color: var(--colour-gray);
+}
+
+.bg-red {
+    background-color: var(--colour-red);
+}
+
+.bg-red:hover {
+    color: var(--colour-red);
+    background-color: var(--colour-white);
+    border-color: var(--color-red);
+}
+
+.bg-blue {
+    background-color: var(--colour-blue);
+}
+
+.bg-blue:hover {
+    color: var(--colour-blue);
+    background-color: var(--colour-white);
+    border-color: var(--color-blue);
+}
+
+.bg-yellow {
+    background-color: var(--colour-yellow);
+}
+
+.bg-yellow:hover {
+    color: var(--colour-yellow);
+    background-color: var(--colour-white);
+    border-color: var(--color-yellow);
+}
+
+.bg-gray {
+    background-color: var(--colour-gray);
+}
+
+.bg-gray:hover {
+    color: var(--colour-gray);
+    background-color: var(--colour-white);
+    border-color: var(--color-gray);
+}
+
+.header-container {
+    padding: 20px;
+    background-color: var(--colour-red);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-container h1 {
+    color: var(--colour-white);
+    font-size: 2.5rem;
+    margin-left: 20px;
+}
+
+.header-container ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: var(--colour-white);
+    gap: 10px;
+    margin-right: 20px;
+}
+
+.header-container li {
+    cursor: pointer;
+}
+
+.header-container li.selected {
+    border-bottom: 4px solid var(--colour-white);
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 20px;
+}
+
+.question {
+    background-color: var(--colour-white);
+    font-size: 2.5rem;
+    border-radius: 20px;
+    text-align: center;
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 15px;
+}
+
+.question h1 {
+    display: inline-flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.answers {
+    margin: 0px auto;
+    margin-top: 15px;
+    width: 80%;
+    font-size: 2.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    background-color: var(--colour-white);
+    border-radius: 20px;
+}
+
+.answers h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 25%;
+    height: 50%;
+    color: var(--colour-white);
+    border: 2px solid var(--colour-white);
+    transition: 1s;
+}
+
+.scores {
+    margin: 0px auto;
+    margin-top: 15px;
+    background-color: var(--colour-light-gray);
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.scores span {
+    font-size: 2.5rem;
+}
+
+.scores button {
+    margin-top: 10px;
+    font-size: 1.8rem;
+    font-family: 'Luckiest Guy', cursive;
+    outline: none;
+    border:2px solid rgb(255, 0, 0);
+    background-color: var(--colour-red);
+    color: var(--colour-white);
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.scores button:hover {
+    border-color: var(--colour-red);
+    background-color: var(--colour-white);
+    color: var(--colour-red);
+}
